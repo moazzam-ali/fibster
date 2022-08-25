@@ -50,7 +50,7 @@ html{
     background-position:  bottom left, 0;
     display: flex;
     color: white;
-    font-family: 'Sofia Pro';
+    font-family: 'Sofia Pro', 'Popins', serif;
     font-weight: 500;
     display: flex;
 }
