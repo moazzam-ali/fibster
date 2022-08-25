@@ -7,6 +7,40 @@ html{
     padding: 0;
 }
 
+@font-face {
+    font-family: 'Sofia Pro';
+    src: url('./fonts/SofiaProBold.eot');
+    src: local('./fonts/Sofia Pro Bold'), local('SofiaProBold'),
+        url('./fonts/SofiaProBold.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/SofiaProBold.woff') format('woff'),
+        url('./fonts/SofiaProBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sofia Pro';
+    src: url('./fonts/SofiaProRegular.eot');
+    src: local('./fonts/Sofia Pro Regular'), local('SofiaProRegular'),
+        url('./fonts/SofiaProRegular.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/SofiaProRegular.woff') format('woff'),
+        url('./fonts/SofiaProRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sofia Pro';
+    src: url('./fonts/SofiaProLight.eot');
+    src: local('./fonts/Sofia Pro Light'), local('SofiaProLight'),
+        url('./fonts/SofiaProLight.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/SofiaProLight.woff') format('woff'),
+        url('./fonts/SofiaProLight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+
 .container{
     width: 100vw;
     min-height: 100vh;
@@ -16,7 +50,8 @@ html{
     background-position:  bottom left, 0;
     display: flex;
     color: white;
-    font-family: 'Poppins';
+    font-family: 'Sofia Pro';
+    font-weight: 500;
     display: flex;
 }
 
@@ -31,20 +66,23 @@ html{
 .logo{
     width: 10rem;
     background-color: #171465;
+    border-radius: .5rem;
 }
 
 .title{
-    font-size: 5.5rem;
+    font-size: 6rem;
+    font-weight: bold;
     line-height: 7.5rem;
     margin-top: 4rem;
 }
 
 .details{
-    font-size: 1.7rem;
+    font-size: 2rem;
     line-height: 3.5rem;
     word-wrap: break-word;
     width: 80%;
     margin-top: 2rem;
+    font-weight: 300;
     
 }
 
@@ -72,7 +110,7 @@ html{
 .availability{
     display: flex;
     justify-content: space-between;
-    margin-top: 4rem;
+    margin-top: 3rem;
     flex-wrap: wrap;
 }
 
@@ -83,8 +121,9 @@ html{
 
 .rooms{
     color: #FE0666;
-    font-size: 4rem;
-    text-shadow: 0 0 35px #e60073;
+    font-size: 5rem;
+    text-shadow: 0 0 50px #e60073;
+    font-weight: 300;
 }
 
 .sub{
@@ -101,18 +140,21 @@ html{
 }
 
 .logo-responsive{
-    position: absolute;
+    width: 0;
     visibility: hidden;
+    border-radius: .5rem;
 }
 .logo2{
     width: 25rem;
     background-color: #210070;
     padding: 1rem 2rem;
+    border-radius: .3rem;
 }
 
 .gif{
     background-color: #210070;
     padding: 0 2rem;
+    border-radius: .3rem;
 }
 
 @media only screen and (max-width: 600px) {
@@ -142,7 +184,8 @@ html{
     }
 
     .logo-responsive{
-        display: none;
+        visibility: hidden;
+        width: 0;
     }
 
 }
@@ -184,8 +227,9 @@ html{
 
     .logo-responsive{
         visibility: visible;
-        margin: auto;
-        position: relative;
+        width: 15%;
+        align-self: flex-start;
+
     }
     .gif{
         width: 50%;
