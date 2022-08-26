@@ -161,6 +161,10 @@ html{
         font-size: 7px;
     }
 
+    .title{
+        font-size: 5rem;
+    }
+
     .illustration{
         visibility: hidden;
         position: absolute;
