@@ -1,5 +1,5 @@
 html{
-    font-size: 10px;
+    font-size: 8px;
 }
 *, *::after, *::before{
     box-sizing: border-box;
@@ -81,7 +81,7 @@ html{
     line-height: 3.5rem;
     word-wrap: break-word;
     width: 80%;
-    margin-top: 2rem;
+    margin-top: 1vh;
     font-weight: 300;
     
 }
@@ -94,7 +94,7 @@ html{
     width: fit-content;
     border-radius: 2rem;
     font-size: 2rem;
-    margin-top: 3rem;
+    margin-top: 5vh;
     transition: all .2s;
 }
 
@@ -110,7 +110,7 @@ html{
 .availability{
     display: flex;
     justify-content: space-between;
-    margin-top: 3rem;
+    margin-top: 3vh;
     flex-wrap: wrap;
 }
 
@@ -146,21 +146,19 @@ html{
     border-radius: .5rem;
 }
 .logo2{
-    width: 25rem;
-    background-color: #210070;
-    padding: 1rem 2rem;
+    width: 20rem;
     border-radius: .3rem;
 }
 
 .gif{
-    background-color: #210070;
+    width: 85%;
     padding: 0 2rem;
     border-radius: .3rem;
 }
 
 @media only screen and (max-width: 600px) {
     html{
-        font-size: 8px;
+        font-size: 7px;
     }
 
     .illustration{
@@ -253,6 +251,6 @@ html{
 }
 @media only screen and (min-width: 1650px) {
     html{
-        font-size: 12px;
+        font-size: 11px;
     }
 }
