@@ -191,6 +191,7 @@ html{
         width: 0;
     }
 
+
 }
 
 @media only screen and (min-width: 600px) and (max-width: 768px){
@@ -235,24 +236,30 @@ html{
 
     .logo-responsive{
         visibility: visible;
-        width: 15%;
+        width: 12%;
         align-self: flex-start;
 
     }
     .gif{
-        width: 50%;
+        width: 45%;
     }
 
     .logo2{
-        width: 30%;
+        width: 25%;
     }
     
     .btn{
         align-self: center;
+        margin-top: 3rem;
     }
 
     .details{
         font-size: 1.5rem;
+        line-height: 2.5rem;
+    }
+
+    .availability{
+        margin-top: 2rem;
     }
 
 }
